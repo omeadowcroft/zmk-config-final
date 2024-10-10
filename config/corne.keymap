@@ -17,7 +17,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <160>;
         };
     };
 
@@ -62,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp ESCAPE        &kp AT_SIGN  &kp HASH           &kp DOLLAR  &kp PRCNT         &mt CARET COLON   &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &trans   &trans
-&trans  &kp EXCLAMATION   &kp N2       &kp SQT            &kp EQUAL   &trans            &kp MINUS         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp RET  &trans
-&trans  &kp LS(NUMBER_3)  &kp N7       &kp DOUBLE_QUOTES  &trans      &trans            &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &to 1    &trans
-                                       &trans             &to 0       &kp LEFT_SHIFT    &kp LEFT_ALT      &to 3                 &kp BACKSPACE
+&trans  &kp ESCAPE        &kp AT_SIGN  &kp HASH           &kp DOLLAR  &kp PRCNT           &new_behavior CARET COLON  &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &kp BACKSPACE  &trans
+&trans  &kp EXCLAMATION   &kp N2       &kp SQT            &kp EQUAL   &trans              &kp MINUS                  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp RET        &kp DELETE
+&trans  &kp LS(NUMBER_3)  &kp N7       &kp DOUBLE_QUOTES  &trans      &trans              &kp LEFT_BRACKET           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &to 1          &trans
+                                       &trans             &to 0       &kp LEFT_CONTROL    &kp LEFT_ALT               &to 3                 &kp BACKSPACE
             >;
         };
 
