@@ -34,12 +34,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &trans  &kp B  &kp L  &kp D                     &kp W                                 &kp Z             &kp SQT           &kp F                         &kp O                            &kp U                              &kp J                       &trans
 &trans  &kp N  &kp R  &new_behavior LEFT_ALT T  &new_behavior LEFT_COMMAND S          &kp G             &kp Y             &new_behavior LEFT_COMMAND H  &new_behavior LEFT_ALT A         &kp E                              &kp I                       &trans
@@ -49,12 +43,6 @@
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &kp TAB         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5              &kp F6            &kp F7    &kp F8         &kp F9     &trans  &trans
 &kp LCTRL       &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE    &kp LEFT          &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
@@ -64,12 +52,6 @@
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &kp ESCAPE        &kp AT_SIGN  &kp HASH           &kp DOLLAR  &kp PRCNT           &new_behavior CARET COLON  &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &kp BACKSPACE  &trans
 &trans  &kp EXCLAMATION   &kp N2       &kp SQT            &kp EQUAL   &trans              &kp MINUS                  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp RET        &kp DELETE
